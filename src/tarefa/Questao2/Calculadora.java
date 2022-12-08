@@ -1,5 +1,14 @@
 package tarefa.Questao2;
 
+/*
+Questão #2
+Valor 200
+Enunciado
+Construa um código Java para definir um objeto do tipo “Calculadora” que tem como
+características um valor1 e um valor2 e possui os comportamentos de somar,subtrair,multiplicar e dividir.
+Cada comportamento deve retornar o valor da operação correspondente.
+*/
+
 public class Calculadora {
     private Integer valor1;
     private Integer valor2;

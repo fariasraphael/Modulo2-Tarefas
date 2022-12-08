@@ -1,9 +1,11 @@
 package tarefa.Questao1;
 
-/*Questão #1
+/*
+Questão #1
 Valor 100
 Enunciado
-//Construa um código Java para definir um objeto do tipo pessoa que possui as seguintes características (nome,idade,altura).*/
+Construa um código Java para definir um objeto do tipo pessoa que possui as seguintes características (nome,idade,altura).
+*/
 
 public class Pessoa {
     private String nome;
@@ -20,7 +22,7 @@ public class Pessoa {
         return nome;
     }
 
-    public void setNome (String nome) {
+    public void setNome () {
         this.nome = nome;
     }
 
@@ -38,5 +40,10 @@ public class Pessoa {
 
     public void setAltura () {
         this.altura = altura;
+    }
+
+    @Override
+    public String toString(){
+        return "Nome: " + nome + "Idade: " + idade + "Altura: " + altura;
     }
 }
