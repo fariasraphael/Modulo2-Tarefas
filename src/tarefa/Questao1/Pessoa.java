@@ -8,42 +8,47 @@ Construa um código Java para definir um objeto do tipo pessoa que possui as seg
 */
 
 public class Pessoa {
+
     private String nome;
-    private String idade;
-    private String altura;
+    private Integer idade;
+    private Double altura;
 
-    public Pessoa (String nome, String idade, String altura) {
+    public Pessoa(String nome, Integer idade, Double altura) {
         this.nome = nome;
         this.idade = idade;
-        this.altura = altura;
-    }
-
-    public String getNome () {
-        return nome;
-    }
-
-    public void setNome () {
-        this.nome = nome;
-    }
-
-    public String idade () {
-        return idade;
-    }
-
-    public void setIdade () {
-        this.idade = idade;
-    }
-
-    public String getAltura () {
-        return altura;
-    }
-
-    public void setAltura () {
         this.altura = altura;
     }
 
     @Override
-    public String toString(){
-        return "Nome: " + nome + "Idade: " + idade + "Altura: " + altura;
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", altura=" + altura +
+                '}';
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Integer getIdade() {
+        return idade;
+    }
+
+    public void setIdade(Integer idade) {
+        this.idade = idade;
+    }
+
+    public Double getAltura() {
+        return altura;
+    }
+
+    public void setAltura(Double altura) {
+        this.altura = altura;
     }
 }

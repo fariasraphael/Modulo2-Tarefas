@@ -10,42 +10,32 @@ Cada comportamento deve retornar o valor da operação correspondente.
 */
 
 public class Calculadora {
-    private Integer valor1;
-    private Integer valor2;
 
-    public Calculadora (Integer valor1, Integer valor2) {
+    private Double valor1;
+    private Double valor2;
+
+    public Calculadora(Double valor1, Double valor2) {
         this.valor1 = valor1;
         this.valor2 = valor2;
     }
 
-    public void somar (Integer valor1, Integer valor2){
-        System.out.println(valor1 + valor2);
+    public Double somar() {
+        return valor1 + valor2;
     }
 
-    public void subtrair (Integer valor1, Integer valor2) {
-        System.out.println(valor1 - valor2);
+    public Double subtrair() {
+        return valor1 - valor2;
     }
 
-    public void multiplicar (Integer valor1, Integer valor2){
-        System.out.println(valor1 * valor2);
-    }
-    public void dividir (Integer valor1, Integer valor2) {
-        System.out.print(valor1/valor2);
+    public Double multiplicar() {
+        return valor1 * valor2;
     }
 
-    public Integer getValor1 () {
-        return valor1;
-    }
-
-    public void setValor1 (Integer valor1) {
-        this.valor1 = valor1;
-    }
-
-    public Integer getValor2 () {
-        return valor2;
-    }
-
-    public void setValor2 (Integer valor2) {
-        this.valor2 = valor2;
+    public Double dividir() throws ArithmeticException {
+        if (valor2 == 0) {
+            throw new ArithmeticException("Não é permitido dividir por zero.");
+        }
+        return valor1 / valor2;
     }
 }
+
